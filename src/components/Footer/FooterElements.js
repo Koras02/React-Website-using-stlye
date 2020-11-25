@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
 `
 
 export const FooterWrap = styled.div`
-  padding: 48px 30px;
+  padding: 40px 32px;
   display:flex;
   flex-direction: column;
   justify-content:center;
@@ -63,13 +63,13 @@ export const FooterLink = styled(Link)`
 
  &:hover{
     color:#01bf71;
-    transition: 0.3s ease-out
+    transition: 0.3s ease-out;
  }
 `;
 
 export const SocialMedia = styled.section `
   max-width: 1000px;
-  width:100%;
+  width:900%;
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -110,5 +110,5 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.div`
    color:#fff;
-   font-size:24px;
+   font-size:20px;
 `;
