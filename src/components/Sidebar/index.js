@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBars } from 'react-icons/fa';
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper,SidebarMenu, SidebarLink,SideBtnWrap,SidebarRoute} from './SidebarElements';
 
 
