@@ -6,7 +6,7 @@ import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  // margin-top: --80px;
+  margin-top: -80px;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -39,7 +39,7 @@ color:#fff;
  align-items: center;
  margin-left:24px;
  font-weight:bold;
- text-deroation:none;
+ text-decoration:none;
 `;
 
 // 해상도가 768일때 메뉴 아이콘 색이 빨간색으로 변한다.
