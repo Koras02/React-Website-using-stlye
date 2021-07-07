@@ -4,37 +4,33 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({scrollNav})=> (scrollNav ? 'display': 'none')};
-  height: 80px;
-  margin-top: -80px;
+  background:#000;
   display: flex;
   justify-content:center;
   align-items: center;
   font-size: 1rem;
-  position:sticky;
+  position:sticky ;
   top:0;
-  transition:all .3s;
-  transform:translate(0%);
-
-  z-index:10;
-  
+  transition:all 0.5s ease-in-out;
+  z-index:10; 
   @media screen and(max-width: 960px){
       transition: 0.8s all ease;
   }
 `
 
 export const  NavbarContainer = styled.div`
+   color:#fff;
    display: flex;
    justify-content: space-between;
    height: 80px;
    z-index: 1;
    width: 100%;
-   padding: 0 24px;
+   padding: 0 12px;
    max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
-color:#fff;
+export const NavLogoLink = styled(LinkR)`
+ color:#fff;
  justify-self: flex-start;
  cursor: pointer;
  font-size:1.5rem;
@@ -47,8 +43,8 @@ color:#fff;
 
 // 해상도가 768일때 메뉴 아이콘 색이 빨간색으로 변한다.
 export const MobileIcon = styled.div`
+ 
   display: none;
-
   @media screen and (max-width:768px){
     display:block;
     position:absolute;
@@ -67,12 +63,14 @@ export const MobileIcon = styled.div`
 
 
 export const NavMenu = styled.ul`
+  border-right:1px solid #fff;
+  border-left:1px solid #fff;
   display:flex;
   align-items: center;
   list-style: none;
   text-align:center;
-  margin-right: -22px;
-
+  padding:20px;
+  margin-right: -20px;
   @media screen and (max-width:768px){
     display:none;
   }
@@ -83,13 +81,15 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)` 
-  color: #fff;
+ 
   display:flex;
   align-items: center;
   text-decoration:none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  padding:24px;
+  font:bold 16px/30px arial;
   
   &.active{
     border-bottom: 3px solid #01bf71;
@@ -99,7 +99,6 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
    display:flex;
    align-items: center;
-
    @media screen and (max-width: 768px){
      display:none;
    }
